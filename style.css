@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(38,38,38);
+    background: linear-gradient(90deg, rgba(38,38,38,1) 0%, rgba(12,12,71,1) 100%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+    transition: background-color 0.8s ease-in-out;
+
+    
+}
+
+body.light-mode{
+    background: beige;
+    transition: background 0.8s ease-in-out;
+
+}
+
+nav{
+    height: 10vh;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.8s ease-in-out;
+
+}
+
+nav.light-mode{
+    background-color: black;
+    color: white;
+    transition: background-color 0.8s ease-in-out;
+}
+
+#nav-list{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 20px;
+}
+
+#nav-list li{
+    font-size: 1.5rem;
+}
+
+#btn{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(12,12,71,1);
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    width: 10px;
+    opacity: 0;
+}
+
+.toggler{
+    position: relative;
+    width: 5vw;
+}
+
+#btn.light-mode{
+    color: black;
+    background-color: white;
+    transition: background-color 0.8s ease-in-out;
+    opacity: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    transition: background-color 0.8s ease-in-out;
+}
+
+.container{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: black;
+    box-shadow: 0px 3px 15px gray;
+    transition: background-color 0.8s ease-in-out;
+}
+
+.container.light-mode{
+    background-color: white;
+    transition: background-color 0.8s ease-in-out;
+
+}
+
+.display{
+    width: 320px;
+    font-size: 2.5rem;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background-color: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    text-align: right;
+    cursor: text;
+    color: white;
+    transition: background-color 0.8s ease-in-out;
+
+
+}
+
+.display.light-mode{
+    color: black;
+    transition: background-color 0.8s ease-in-out;
+
+}
+
+.display::placeholder{
+    color: white;
+}
+
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.8s ease-in-out;
+
+}
+
+button.light-mode{
+    color: black;
+    box-shadow: -4px -4px 10px rgba(235, 231, 231, 0.87);
+    transition: background-color 0.8s ease-in-out;
+
+
+}
+
+.orange{
+    color: orangered !important;
+}
+
+.orange-bg{
+    background-color: orangered;
+    color: white !important;
+}
+
+
+/* @media (max-width: 360px){
+    #nav-list{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav{
+        height: 15vh;
+    }
+
+    .display{
+        width: 75vw;
+    }
+
+    .container{
+        width: 90vw;
+        height: 70vh;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    button{
+        width: 10vw;
+        height: 10vw;
+        font-size: 1rem;
+    }
+} */

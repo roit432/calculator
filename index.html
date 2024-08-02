@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body class="light-mode">
+    <nav class="light-mode">
+        <ul id="nav-list">
+            <li><h3>MyCalculator.com</h3></li>
+            <li class="toggler"><input type="submit" id="btn" class="light-mode" value="Dark Mode"><i class="fa-solid fa-moon" id="modeIcon"></i></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="container light-mode">
+            <input type="text" class="display light-mode" placeholder="0" id="inputBox" />
+            <div class="rows">
+                <button class="orange light-mode">AC</button>
+                <button class="orange light-mode">DEL</button>
+                <button class="orange light-mode">%</button>
+                <button class="orange light-mode">/</button>
+            </div>
+            <div class="rows">
+                <button class="light-mode">7</button>
+                <button class="light-mode">8</button>
+                <button class="light-mode">9</button>
+                <button class="light-mode orange">*</button>
+            </div>
+            <div class="rows">
+                <button class="light-mode">4</button>
+                <button class="light-mode">5</button>
+                <button class="light-mode">6</button>
+                <button class="orange light-mode">-</button>
+            </div>
+            <div class="rows">
+                <button class="light-mode">1</button>
+                <button class="light-mode">2</button>
+                <button class="light-mode">3</button>
+                <button class="orange light-mode" >+</button>
+            </div>
+            <div class="rows">
+                <button class="light-mode">00</button>
+                <button class="light-mode">0</button>
+                <button class="light-mode">.</button>
+                <button class="orange-bg light-mode">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/e72a8a01fb.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
